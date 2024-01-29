@@ -10,7 +10,6 @@
 }
 
 #cloud{
-    display: inline-flex;
     background: url('./../img/cloud.png') no-repeat;
     width: 482px;
     height: 277px;
@@ -39,7 +38,7 @@
     background: url('./../img/flor.gif') no-repeat top;
     width: 496px;
     position: relative;
-    top: 80px;
+    top: 0;
     animation-name: flower;
     animation-duration: 3s;
     animation-delay: calc(var( --start-delay) + 10.1s);
@@ -52,23 +51,22 @@
     background-size: cover;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 5%;
-    right: 7%;
+    position: relative;
+    top: -35%;
+    right: -90%;
     animation-name: sun;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-delay: calc(var( --start-delay)); 
-
+    animation-delay: calc(var( --start-delay));
 }
 
 #message{
     background: transparent;
     width: 281px;
     height: 285px;
-    position: absolute;
-    top: 40%;
-    left: 35%;
+    position: relative;
+    top: 30%;
+    left: 40%;
     animation-name: countdown;
     animation-duration: var( --start-delay);
     animation-fill-mode: both;
@@ -118,7 +116,7 @@
 
 @keyframes sun {
     from {
-        
+        height: 100px;
     }
     to {
         transform: rotate(1turn);
