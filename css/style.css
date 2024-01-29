@@ -1,0 +1,143 @@
+
+:root{
+    --start-delay: 3s
+}
+
+#anim{
+    background: url('/img/bg-house.jpg') no-repeat;
+    width: 1200px;
+    height: 751px;
+}
+
+#cloud{
+    display: inline-flex;
+    background: url('/img/cloud.png') no-repeat;
+    width: 482px;
+    height: 277px;
+    position: relative;
+    top: 0;
+    left: 100%;
+    animation-name: cloud;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-delay: calc(var( --start-delay)); 
+}
+
+#rain{
+    background: url('/img/rain.png') no-repeat bottom;
+    width: 496px;
+    height: 0px;
+    position: relative;
+    top: 280px;
+    animation-name: rain;
+    animation-duration: 4s;
+    animation-delay: calc(var( --start-delay) + 3.2s);
+    transition: height 3s ease-in-out;
+}
+
+#flower{
+    background: url('/img/flor.gif') no-repeat top;
+    width: 496px;
+    position: relative;
+    top: 80px;
+    animation-name: flower;
+    animation-duration: 3s;
+    animation-delay: calc(var( --start-delay) + 10.1s);
+    transition: height 3s ease-in-out;
+    animation-fill-mode: both;
+}
+
+#sun{
+    background: url('/img/sun.png') no-repeat top;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    animation-name: sun;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: calc(var( --start-delay)); 
+
+}
+
+#message{
+    background: transparent;
+    width: 281px;
+    height: 285px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    animation-name: countdown;
+    animation-duration: var( --start-delay);
+    animation-fill-mode: both;
+}
+
+
+@keyframes cloud {
+    0% {
+        left: 100%;
+    }
+    20%, 80%{ 
+        left: 30%;
+    }
+
+    45%, 65%{
+        background-image: url('/img/cloud-a.png');
+    }
+    100% {
+        
+        left: -100%;
+    }
+}
+
+
+
+@keyframes rain {
+    50%  {
+        height: 100px;
+    }
+    100% {
+        height: 400px;
+    }
+
+}
+
+
+@keyframes flower {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 219px;
+    }
+
+}
+
+
+@keyframes sun {
+    from {
+        
+    }
+    to {
+        transform: rotate(1turn);
+    }
+
+}
+
+@keyframes countdown {
+    from {
+        background: url('/img/countdown/3.jpg') no-repeat top;
+    }
+    30%{
+        background: url('/img/countdown/2.jpg') no-repeat top;
+    }
+    60%{
+        background: url('/img/countdown/1.jpg') no-repeat top;
+    }
+    to {
+        display: none;
+    }
+
+}
