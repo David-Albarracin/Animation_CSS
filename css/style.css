@@ -4,14 +4,14 @@
 }
 
 #anim{
-    background: url('../img/bg-house.jpg') no-repeat;
+    background: url('./../img/bg-house.jpg') no-repeat;
     width: 1200px;
     height: 751px;
 }
 
 #cloud{
     display: inline-flex;
-    background: url('../img/cloud.png') no-repeat;
+    background: url('./../img/cloud.png') no-repeat;
     width: 482px;
     height: 277px;
     position: relative;
@@ -24,7 +24,7 @@
 }
 
 #rain{
-    background: url('../img/rain.png') no-repeat bottom;
+    background: url('./../img/rain.png') no-repeat bottom;
     width: 496px;
     height: 0px;
     position: relative;
@@ -36,7 +36,7 @@
 }
 
 #flower{
-    background: url('../img/flor.gif') no-repeat top;
+    background: url('./../img/flor.gif') no-repeat top;
     width: 496px;
     position: relative;
     top: 80px;
@@ -48,7 +48,7 @@
 }
 
 #sun{
-    background: url('../img/sun.png') no-repeat top;
+    background: url('./../img/sun.png') no-repeat top;
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -84,7 +84,7 @@
     }
 
     45%, 65%{
-        background-image: url('../img/cloud-a.png');
+        background-image: url('./../img/cloud-a.png');
     }
     100% {
         
@@ -128,13 +128,13 @@
 
 @keyframes countdown {
     from {
-        background: url('../img/countdown/3.jpg') no-repeat top;
+        background: url('./../img/countdown/3.jpg') no-repeat top;
     }
     30%{
-        background: url('../img/countdown/2.jpg') no-repeat top;
+        background: url('./../img/countdown/2.jpg') no-repeat top;
     }
     60%{
-        background: url('../img/countdown/1.jpg') no-repeat top;
+        background: url('./../img/countdown/1.jpg') no-repeat top;
     }
     to {
         display: none;
